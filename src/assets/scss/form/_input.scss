@@ -1,0 +1,152 @@
+// _input.scss
+// 
+// Template's input styles.
+// 
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.form-item-container {
+  position: relative;
+  padding-top: 10px;
+}
+
+.form-item-container .form-control {
+  padding: 0.5rem 0rem 0rem 0rem !important;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.5px solid #ced4da !important;
+}
+
+.form-item-container .dp__input_icon_pad {
+  padding: 0.5rem 0rem 0rem 0rem !important;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-bottom: 3px;
+}
+.dp__input_icon {
+  display: none;
+}
+
+.form-item-container .form-select {
+  padding: 0.5rem 2.25rem 0rem 0rem !important;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.5px solid #ced4da !important;
+}
+
+.form-item-container .custom-select {
+  padding: 0rem 0rem 0rem 0.2rem !important;
+  border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.5px solid #ced4da !important;
+}
+
+.v3dp__input_wrapper .form-control {
+  background-color: transparent !important;
+}
+
+.form-control:focus,
+.form-select:focus,
+.custom-select:hover {
+  border-color: rgb(237, 158, 0);
+  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.075) inset,
+    0px 8px 6px -6px rgba(237, 158, 0, 0.5);
+}
+
+.form-item-container .form-control ~ .form-item-container-label,
+.form-item-container .form-select ~ .form-item-container-label,
+.form-item-container .custom-select ~ .form-item-container-label,
+.form-item-container .v3dp__datepicker ~ .form-item-container-label,
+.form-item-container .dp__main ~ .form-item-container-label {
+  position: absolute;
+  top: 1rem;
+  left: 0rem;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  transform-origin: 0 0;
+  transition: all 0.2s ease-out;
+  color: #000;
+  background-color: transparent;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  height: 25px;
+}
+
+.form-item-container
+  .form-control:focus:placeholder-shown
+  ~ .form-item-container-label,
+.form-item-container
+  .form-control.active:placeholder-shown
+  ~ .form-item-container-label,
+.form-item-container .form-select ~ .form-item-container-label,
+.form-item-container .custom-select ~ .form-item-container-label,
+.form-item-container .v3dp__datepicker ~ .form-item-container-label,
+.form-item-container .dp__main ~ .form-item-container-label {
+  width: fit-content;
+  transform: translateY(-1rem) scale(0.8);
+  padding: 0px;
+  font-weight: bold;
+}
+
+.form-item-container-sufix {
+  position: absolute;
+  transform: translateY(-2.6rem);
+  padding: 0px;
+  right: 20px;
+}
+
+.form-item-container
+  .form-control:not(:placeholder-shown)
+  ~ .form-item-container-label {
+  width: fit-content;
+  top: 0rem;
+  transform: scale(0.8);
+  padding: 0px;
+  font-weight: bold;
+}
+
+.form-item-container .form-control ~ .form-item-container-trailing {
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+  font-weight: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* Edge */
+  color: transparent !important;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: transparent !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: transparent !important;
+}

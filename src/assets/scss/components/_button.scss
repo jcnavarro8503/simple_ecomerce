@@ -1,0 +1,110 @@
+// _button.scss
+//
+// Template's button styles.
+//
+
+/* ---------------------------------------------------
+    BUTTONS STYLE
+----------------------------------------------------- */
+.std-btn {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.std-btn:hover {
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+.std-btn-fullw {
+  width: 100%;
+}
+.std-btn-standard {
+  background-color: $color-primary;
+  color: $color-white;
+}
+.std-btn-disabled {
+  background-color: $color-gray-5;
+  color: $color-dark;
+}
+.std-btn-submit {
+  background-color: $color-success;
+  color: $color-white;
+}
+.std-btn-cancel {
+  background-color: $color-secondary;
+  color: $color-white;
+}
+.std-btn-delete {
+  background-color: $color-danger;
+  color: $color-white;
+}
+.std-btn-icon {
+  background-color: transparent;
+  color: $color-white;
+}
+
+.div-as-btn {
+  cursor: pointer;
+}
+
+.btn svg {
+  margin-right: 5px;
+}
+.btn.btn-icon-only svg {
+  margin-right: 0;
+}
+.btn > .anticon + span {
+  margin-left: 0;
+}
+.btn > span + .anticon {
+  margin-left: 5px;
+}
+.btn > svg {
+  vertical-align: middle;
+}
+.btn > svg + span {
+  vertical-align: middle;
+}
+.btn-icon-only.btn-lg:not(.btn-round),
+.btn-icon-only.btn:not(.btn-round),
+.btn-icon-only.btn-sm:not(.btn-round) {
+  padding: 0;
+}
+
+.btn-circle,
+.btn-circle-outline {
+  border-radius: 50%;
+}
+.btn.fab {
+  width: 50px;
+  height: 50px;
+  background-color: $color-white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: $shadow-3;
+
+  svg {
+    margin: 0;
+  }
+}
+
+.btn.fab {
+  width: 50px;
+  height: 50px;
+  background-color: $color-white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: $shadow-3;
+
+  svg {
+    margin: 0;
+  }
+}

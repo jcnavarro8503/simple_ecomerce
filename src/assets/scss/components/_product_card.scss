@@ -1,0 +1,64 @@
+// _product_card.scss
+//
+// Template's product card styles.
+//
+
+// product card item
+.product-card-container {
+  margin: 5px;
+  background-color: transparent;
+
+  .product-card-inner {
+    height: auto;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+
+    .title {
+      color: $color-success;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .image-view {
+      padding: 5px;
+      height: 180px;
+      width: 100%;
+      max-width: 150px;
+   
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .category {
+      color: $color-secondary;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 5px;
+    }
+
+    .price {
+      color: $color-primary;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .info-section {
+      margin: 8px;
+      text-align: left;
+      color: #334756;
+      width: inherit;
+      height: 280px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      word-break: break-all;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// _search_bar.scss
+//
+// Template's search bar styles.
+//
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .search-bar-inner {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0px;
+    padding: 1px 15px;
+    border-radius: 50px;
+    background-color: $color-gray-5;
+
+    .search-bar-icon {
+      color: $color-primary;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+}

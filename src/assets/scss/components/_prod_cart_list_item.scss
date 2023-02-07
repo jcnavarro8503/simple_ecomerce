@@ -1,0 +1,43 @@
+// _prod_cart_list_item.scss
+//
+// Product cart list item styles.
+//
+
+// Prod cart list item
+.prod-cart-list-item-container {
+  margin: 5px;
+  background-color: transparent;
+
+  .prod-cart-list-item-inner {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+    .image-view {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .title {
+      color: $color-primary;
+      font-size: 14px;
+      text-transform: uppercase;
+      word-wrap: break-word;
+    }
+
+    .price-qtty {
+      color: $color-secondary;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}

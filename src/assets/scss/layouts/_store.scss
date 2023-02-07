@@ -1,0 +1,58 @@
+// _store.scss
+// 
+// Template's store layout styles.
+// 
+
+
+body {
+	padding: 0px;
+	background-color: $color-gray-2;
+}
+
+// Default Layout
+.layout-store {
+	height: 100vh;
+	background: $color-gray-2;
+	text-align: left;
+	position: relative;
+	overflow-x: hidden;
+
+	.header-container {
+		height: 60px;
+		width: 100%;
+		background-color: $color-white;
+		position: absolute;
+
+		box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.3);
+
+		.commerce-logo{
+			height: 50px;
+		}
+	} 
+
+	.work-area-container {
+		height: calc(100vh - 80px);
+		margin: 60px 15px 10px 15px;
+
+		.work-area-content {
+			width: 100%;
+			height: calc(100% - 100px);
+			padding: 10px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+
+	} 
+
+	.title {
+		font-size: large;
+		font-weight: bolder;
+		color: $color-primary;
+	}
+
+	@media( min-width: $lg ){
+		overflow: auto;
+	}
+}
+// Default Layout
